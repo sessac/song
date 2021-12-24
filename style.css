@@ -1,0 +1,39 @@
+body {
+  margin:0;
+}
+a {
+      color:black;
+  text-decoration:none;
+}
+h1 {
+  font-size: 30px;
+  text-align: center;
+  border-bottom: 2px solid black;
+  margin:0;
+  padding: 25px;
+}
+h2 {
+  margin:0;
+}
+#grid ol {
+  line-height: 150%;
+  border-right: 2px solid black;
+  width:90px;
+  text-indent: 3px;
+  margin:0;
+  padding:15px 0px 15px 30px;
+}
+#grid{
+  display: grid;
+  grid-template-columns: 121px 1fr;
+}
+#gridB{
+  padding:20px
+}
+@media(max-width:800px) {
+  #grid{
+    display: block;
+}
+  #grid ol {
+    border:none;
+}
