@@ -8,11 +8,33 @@
 </head>
 <body>
 <h1><a href="index.html"><img src="음표.jpg" style="vertical-align:middle; width:40px; height:46px; margin-right:10px;">SONG</a></h1>
-<input type="button" value="Gray" onclick="
-document.querySelector('body').style.backgroundColor='#bdbdbd';
-">
-<input type="button" value="White" onclick="
-document.querySelector('body').style.backgroundColor='#ffffff'">
+
+  <input type="button" value="night" onclick="
+  var target = document.querySelector('body');
+if(this.value === 'night'){
+  target.style.backgroundColor='black';
+  target.style.color='white';
+  this.value ='day';
+
+  var alist = document.querySelectorAll('a');
+  var i = 0;
+  while(i < alist.length){
+    alist[i].style.color = '#dbdbdb';
+    i = i + 1;
+  }
+} else {
+  target.style.backgroundColor='White';
+  target.style.color='black';
+  this.value ='night';
+
+  var alist = document.querySelectorAll('a');
+  var i = 0;
+  while(i < alist.length){
+    alist[i].style.color = '#000000';
+    i = i + 1;
+  }
+}
+  ">
 <div id="grid">
   <ol>
     <li><a href="song.html">Song</a></li>
@@ -44,6 +66,7 @@ document.querySelector('body').style.backgroundColor='#ffffff'">
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
 
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
