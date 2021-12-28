@@ -10,30 +10,45 @@ h1 {
   text-align: center;
   border-bottom: 2px solid black;
   margin:0;
-  padding: 25px;
+  padding: 15px;
 }
 h2 {
   margin:0;
 }
+
 #grid ol {
   line-height: 150%;
   border-right: 2px solid black;
-  width:90px;
+  width:80px;
   text-indent: 3px;
   margin:0;
-  padding:15px 0px 15px 30px;
+  padding:10px 0px 10px 35px;
 }
 #grid{
   display: grid;
-  grid-template-columns: 121px 1fr;
+  grid-template-columns: 120px 1fr;
+  position: relative
 }
 #gridB{
-  padding:20px
+  padding:25px
 }
 @media(max-width:800px) {
   #grid{
     display: block;
-}
+  }
   #grid ol {
     border:none;
+  }
+}
+#night_day {
+  width:55px;
+  font-size: 15px;
+  background-color: gray;
+  color: white;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+  display: inline;
+  position: absolute;
+  left: 25px;
 }
