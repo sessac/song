@@ -16,6 +16,13 @@ h2 {
   margin:0;
 }
 
+#logo {
+  vertical-align:middle;
+  width: 40px;
+  height: 46px;
+  margin-right: 10px;
+}
+
 #grid ol {
   line-height: 150%;
   border-right: 2px solid black;

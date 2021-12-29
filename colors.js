@@ -14,17 +14,16 @@ function BodysetColor(backgroundColor,color) {
   document.querySelector('h1').style.borderColor=color;
 }
 
-
 function nightDayHandler(self){
   if(self.value === 'night'){
     BodysetColor('black','white')
     self.value ='day';
     setColor('white');
-
+    document.querySelector('#logo').src = '색반전음표.jpg';
   } else {
     BodysetColor('white','black')
     self.value ='night';
     setColor('black');
-
+    document.querySelector('#logo').src = '음표.jpg';
     }
 }
